@@ -1,7 +1,10 @@
 {
-  "name": "letras",
+  "name": "letras-svg",
+  "description": "SVG letters with animations",
+  "author": "Pepe Guerra",
   "private": true,
-  "version": "0.0.0",
+  "license": "MIT",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
