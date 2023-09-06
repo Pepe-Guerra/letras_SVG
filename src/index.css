@@ -1,0 +1,809 @@
+/* // Import all of Bootstrap's CSS */
+
+/* 1rem = 16px */
+
+:root {
+  --letter-color: #000000;
+  --letter-storke: 50;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #1e2136;
+  color: #7fffd4;
+}
+
+.container{
+  padding: 3rem 8rem;
+}
+
+.grid{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.word{
+  position: relative;
+  grid-area: 1 / 1 / 2 / 6;
+}
+.word .wordLetters:first-child svg{
+  width: 100%;
+}
+.word .wordLetters svg{
+  width: 60%;
+}
+.wordLetters{
+  position: relative;
+  box-sizing: border-box;
+  width: calc(100% / 8); /* Dividir el espacio en 7 partes */
+  height: 100%;
+}
+
+.wordLetters svg{
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.letter{
+  position: relative;
+  box-sizing: border-box;
+  height: 150px;
+  padding: 1rem;
+  background-color: #686b8a;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter svg{
+  width: 100%;
+} 
+
+/* A Animation START*/
+#letras #A #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 548;
+  stroke-dashoffset: 548;
+  animation: dash 1.25s ease forwards;
+}
+
+#letras #A #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 549;
+  stroke-dashoffset: 549;
+  animation: dash 1.25s ease 1.25s forwards;
+}
+
+#letras #A #p3{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 272;
+  stroke-dashoffset: 272;
+  animation: dash 5s ease 2s forwards;
+}
+/* A Animation END */
+
+/* B Animation START*/
+#letras #B #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 2s ease forwards;
+}
+
+#letras #B #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 204;
+  stroke-dashoffset: 204;
+  animation: dash 1s ease 2s forwards;
+}
+
+#letras #B #p3{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 250;
+  stroke-dashoffset: 250;
+  animation: dash 1s ease 2s forwards;
+}
+
+#letras #B #p4{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 250;
+  stroke-dashoffset: 250;
+  animation: dash 1s linear forwards;
+}
+
+#letras #B #p5{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 393;
+  stroke-dashoffset: 393;
+  animation: dash 1s linear 1s forwards;
+}
+
+#letras #B #p6{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 393;
+  stroke-dashoffset: 393;
+  animation: dash 1s linear 1s forwards;
+}
+/* B Animation END */
+
+/* C Animation START*/
+#letras #C #p1{
+  --strokeWidth: 1285;
+  stroke: #9b9b00;
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: var(--strokeWidth);
+  stroke-dashoffset: var(--strokeWidth);
+  animation: rewind 2s ease reverse infinite;
+}
+/* C Animation END */
+
+/* D Animation START*/
+#letras #D #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 1686;
+  stroke-dashoffset: 1686;
+  animation: dash 2s ease forwards; 
+}
+/* D Animation END */
+
+/* E Animation START*/
+#letras #E #p1{
+  stroke: #520996;
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: loop 2s linear reverse infinite;
+}
+
+#letras #E #p2{
+  stroke: #520996;
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: loop 2s linear reverse infinite;
+}
+
+#letras #E #p3{
+  stroke: #520996;
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 251;
+  stroke-dashoffset: 251;
+  animation: loop 2s linear reverse infinite;
+}
+
+#letras #E #p4{
+  stroke: #520996;
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 525;
+  /* stroke-dashoffset: 525; */
+  /* animation: loop 2s linear 0.4s infinite; */
+}
+/* E Animation END */
+
+/* F Animation START*/
+#letras #F #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: dash 2s ease forwards;
+}
+
+#letras #F #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 251;
+  stroke-dashoffset: 251;
+  animation: dash 2s ease forwards;
+}
+
+#letras #F #p3{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 525;
+  stroke-dashoffset: 525;
+  animation: dash 2s ease 0.4s forwards;
+}
+/* F Animation END */
+
+/* G Animation START*/
+#letras #G #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 1259;
+  stroke-dashoffset: 1259;
+  animation: dash 2s ease forwards;
+}
+#letras #G #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 225;
+  stroke-dashoffset: 225;
+  animation: dash 1s ease 1s forwards;
+}
+#letras #G #p3{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 125;
+  stroke-dashoffset: 125;
+  animation: dash 1s linear forwards;
+}
+/* G Animation END */
+
+/* H Animation START*/
+#letras #H #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 2s ease forwards;
+}
+#letras #H #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 350;
+  stroke-dashoffset: 350;
+  animation: dash 1s linear 0.5s forwards;
+}
+#letras #H #p3{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 2s ease forwards;
+}
+/* H Animation END */
+
+/* I Animation START*/
+#letras #I #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 2s ease forwards;
+}
+#letras #I #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 150;
+  stroke-dashoffset: 150;
+  animation: dash 1s ease forwards;
+}
+#letras #I #p3{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 150;
+  stroke-dashoffset: 150;
+  animation: dash 1s ease forwards;
+}
+/* I Animation END */
+
+/* J Animation START*/
+#letras #J #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: dash 2s ease 1.5s forwards;
+}
+#letras #J #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 350;
+  stroke-dashoffset: 350;
+  animation: dash 1s linear 0.5s forwards;
+}
+#letras #J #p3{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 75;
+  stroke-dashoffset: 75;
+  animation: dash 0.5s linear forwards;
+}
+/* J Animation END */
+
+/* K Animation START*/
+#letras #K #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 2s ease forwards;
+}
+#letras #K #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 497;
+  stroke-dashoffset: 497;
+  animation: dash 1s ease 0.5s forwards;
+}
+#letras #K #p3{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: dash 1s ease 0.75s forwards;
+}
+/* K Animation END */
+
+/* L Animation START*/
+#letras #L #p1{
+  stroke: #00008b;
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 500;
+  /* stroke-dashoffset: 500; */
+  animation: fadeIn 1.5s ease infinite;
+}
+#letras #L #p2{
+  stroke: #00008b;
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 300;
+  /* stroke-dashoffset: 300; */
+  animation: fadeIn 1.5s ease infinite;
+}
+/* L Animation END */
+
+/* M Animation START*/
+#letras #M{
+  --l-stroke-color-start: #846326;
+  --l-stroke-color-end: #ffff00;
+  --l-time-animation: 2s;
+}
+#letras #M #p1{
+  stroke: var(--l-stroke-color-start);
+  stroke-width: var(--letter-storke);
+  /* stroke-dasharray: 500; */
+  /* stroke-dashoffset: 500; */
+  animation: m-custom-animation var(--l-time-animation) linear infinite,
+              changeColor var(--l-time-animation) linear infinite;
+}
+#letras #M #p2{
+  stroke: var(--l-stroke-color-start);
+  stroke-width: var(--letter-storke);
+  /* stroke-dasharray: 500; */
+  /* stroke-dashoffset: 500; */
+  animation: m-custom-animation var(--l-time-animation) ease infinite,
+              changeColor var(--l-time-animation) linear infinite;
+}
+#letras #M #p3{
+  stroke: var(--l-stroke-color-start);
+  stroke-width: var(--letter-storke);
+  /* stroke-dasharray: 337; */
+  /* stroke-dashoffset: 337; */
+  animation: m-custom-animation var(--l-time-animation) linear infinite,
+              changeColor var(--l-time-animation) linear infinite;
+}
+#letras #M #p4{
+  stroke: var(--l-stroke-color-start);
+  stroke-width: var(--letter-storke);
+  /* stroke-dasharray: 337; */
+  /* stroke-dashoffset: 337; */
+  animation: m-custom-animation var(--l-time-animation) linear infinite,
+              changeColor var(--l-time-animation) linear infinite;
+}
+/* M Animation END */
+
+/* N Animation START*/
+#letras #N #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 1s linear forwards;
+}
+#letras #N #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 1s ease 2s forwards;
+}
+#letras #N #p3{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 612;
+  stroke-dashoffset: 612;
+  animation: dash 1s linear 1s forwards;
+}
+/* N Animation END */
+
+/* O Animation START*/
+#letras #O #p1{
+  stroke: #008000;
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 1493;
+  /* stroke-dashoffset: 1493; */
+  transform-origin: 50% 50%;
+  animation: changeSize 2s linear infinite;
+}
+/* O Animation END */
+
+/* P Animation START*/
+#letras #P #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 525;
+  stroke-dashoffset: 525;
+  animation: dash 2s ease forwards;
+}
+#letras #P #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 226;
+  stroke-dashoffset: 226;
+  animation: dash 0.25s linear 1.25s forwards;
+}
+#letras #P #p3{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 226;
+  stroke-dashoffset: 226;
+  animation: dash 0.25s linear 0.5s forwards;
+}
+#letras #P #p4{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 432;
+  stroke-dashoffset: 432;
+  animation: dash 0.5s linear 0.75s forwards;
+}
+/* P Animation END */
+
+/* Q Animation START*/
+#letras #Q #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 1493;
+  stroke-dashoffset: 1493;
+  animation: dash 1s ease forwards;
+}
+#letras #Q #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 342;
+  stroke-dashoffset: 342;
+  animation: dash 2s ease forwards;
+}
+/* Q Animation END */
+
+/* R Animation START*/
+#letras #R #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 525;
+  stroke-dashoffset: 525;
+  animation: dash 2s ease forwards;
+}
+#letras #R #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 226;
+  stroke-dashoffset: 226;
+  animation: dash 0.25s linear 1.25s forwards;
+}
+#letras #R #p3{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 226;
+  stroke-dashoffset: 226;
+  animation: dash 0.25s linear 0.5s forwards;
+}
+#letras #R #p4{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 432;
+  stroke-dashoffset: 432;
+  animation: dash 0.5s linear 0.75s forwards;
+}
+#letras #R #p5{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 280;
+  stroke-dashoffset: 280;
+  animation: dash 0.5s linear 0.75s forwards;
+}
+/* R Animation END */
+
+/* S Animation START*/
+#letras #S #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 593;
+  stroke-dashoffset: 593;
+  animation: dash 0.5s ease 1s forwards;
+}
+#letras #S #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 494;
+  stroke-dashoffset: 494;
+  animation: dash 0.5s linear forwards;
+}
+#letras #S #p3{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 406;
+  stroke-dashoffset: 406;
+  animation: dash 0.5s linear 0.5s forwards;
+}
+/* S Animation END */
+
+/* T Animation START*/
+#letras #T #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 501;
+  stroke-dashoffset: 501;
+  animation: dash 1s ease forwards;
+}
+#letras #T #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 326;
+  stroke-dashoffset: 326;
+  animation: dash 1s ease forwards;
+}
+/* T Animation END */
+
+/* U Animation START*/
+#letras #U #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 512;
+  stroke-dashoffset: 512;
+  animation: dash 0.5s linear 0.5s forwards;
+}
+#letras #U #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 337;
+  stroke-dashoffset: 337;
+  animation: dash 0.5s ease 1s forwards;
+}
+#letras #U #p3{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 337;
+  stroke-dashoffset: 337;
+  animation: dash 0.5s linear forwards;
+}
+/* U Animation END */
+
+/* V Animation START*/
+#letras #V #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 549;
+  stroke-dashoffset: 549;
+  animation: dash 1s ease forwards;
+}
+#letras #V #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 549;
+  stroke-dashoffset: 549;
+  animation: dash 1s ease forwards;
+}
+/* V Animation END */
+
+/* W Animation START*/
+#letras #W #p1{
+  stroke: red;
+  stroke-width: 50;
+  stroke-dasharray: 510;
+  stroke-dashoffset: 510;
+  animation: dash 1s ease forwards;
+}
+#letras #W #p2{
+  stroke: blue;
+  stroke-width: 50;
+  stroke-dasharray: 510;
+  stroke-dashoffset: 510;
+  animation: dash 1s ease forwards;
+}
+#letras #W #p3{
+  stroke: blue;
+  stroke-width: 50;
+  stroke-dasharray: 280;
+  stroke-dashoffset: 280;
+  animation: dash 1s ease forwards;
+}
+#letras #W #p4{
+  stroke: red;
+  stroke-width: 50;
+  stroke-dasharray: 280;
+  stroke-dashoffset: 280;
+  animation: dash 1s ease forwards;
+}
+/* W Animation END */
+
+/* X Animation START*/
+#letras #X #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 673;
+  stroke-dashoffset: 673;
+  animation: dash 1.5s ease forwards;
+}
+#letras #X #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 673;
+  stroke-dashoffset: 673;
+  animation: dash 1.5s ease forwards;
+}
+/* X Animation END */
+
+/* Y Animation START*/
+#letras #Y #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: dash 1s linear forwards;
+}
+#letras #Y #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: dash 1s ease 2s forwards;
+}
+#letras #Y #p3{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 673;
+  stroke-dashoffset: 673;
+  animation: dash 1s linear 1s forwards;
+}
+/* Y Animation END */
+
+/* Z Animation START*/
+#letras #Z #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: dash 1s linear forwards;
+}
+#letras #Z #p2{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: dash 1s ease 2s forwards;
+}
+#letras #Z #p3{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 673;
+  stroke-dashoffset: 673;
+  animation: dash 1s linear 1s forwards;
+}
+/* Z Animation END */
+
+/* DASH Animation START*/
+#letras #DASH #p1{
+  stroke: var(--letter-color);
+  stroke-width: var(--letter-storke);
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: dash 3s ease forwards;
+}
+/* DASH Animation END */
+
+/* DOT Animation START*/
+#letras #DOT #p1{
+  stroke: #7b0000;
+  stroke-width: calc(var(--letter-storke) * 3);
+  animation: beat 3s linear infinite;
+}
+/* DOT Animation END */
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes loop {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+@keyframes rewind {
+  0% {
+    stroke-dashoffset: var(--strokeWidth);
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100%{
+    stroke-dashoffset: var(--strokeWidth);
+  }
+}
+
+@keyframes changeSize {
+  0% {
+    transform: scale(1, 1)
+  }
+  50% {
+    transform: scale(0.75, 0.75)
+  }
+  100%{
+    transform: scale(1, 1)
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    stroke: var(--l-stroke-color-end);
+  }
+  50% {
+    stroke: var(--l-stroke-color-start);
+  }
+  100% {
+    stroke: var(--l-stroke-color-end);
+  }
+}
+
+@keyframes beat {
+  0% {
+    stroke-width: 150;
+  }
+  40% {
+    stroke-width: 200;
+  }
+  50% {
+    stroke-width: 175;
+  }
+  60% {
+    stroke-width: 200;
+  }
+  100% {
+    stroke-width: 150;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes m-custom-animation {
+  0% {
+    stroke-width: 30;
+  }
+  50% {
+    stroke-width: 80;
+  }
+  100% {
+    stroke-width: 30;
+  }
+}
